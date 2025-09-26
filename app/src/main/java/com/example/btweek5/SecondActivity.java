@@ -3,6 +3,7 @@ package com.example.btweek5;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
+import android.widget.Button;
 
 public class SecondActivity extends AppCompatActivity {
     @Override
@@ -17,5 +18,10 @@ public class SecondActivity extends AppCompatActivity {
         fact1.setText("Mật ong không bao giờ hỏng – có thể ăn sau hàng nghìn năm.");
         fact2.setText("Não con người tiêu thụ khoảng 20% lượng oxy trong cơ thể.");
         fact3.setText("Bạch tuộc có ba trái tim và máu màu xanh.");
+
+        // Gắn sự kiện cho nút Quay lại
+        Button btnBack = findViewById(R.id.btnBack);
+        btnBack.setOnClickListener(v -> finish());
     }
+
 }
